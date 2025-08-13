@@ -5,6 +5,8 @@ import { useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Users, Building, GraduationCap, Briefcase, User, Mail, Phone, CheckCircle, Loader2 } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 import { Toaster } from "./ui/toaster";
+import { leadsService } from "../services/leadsService";
+import "../utils/supabaseSetup"; // Load Supabase utilities
 
 export function RegistrationSection() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -29,7 +31,7 @@ export function RegistrationSection() {
 
   const participantTypes = [
     { id: "empresa", label: "Empresa", icon: Building },
-    { id: "profesional-cip", label: "Profesional CIP", icon: User },
+    { id: "profesional", label: "Profesional", icon: User },
     { id: "instituto", label: "Instituto", icon: GraduationCap },
     { id: "universidad", label: "Universidad", icon: GraduationCap },
     { id: "independiente", label: "Independiente", icon: Briefcase }
@@ -78,9 +80,20 @@ export function RegistrationSection() {
     setIsSubmitting(true);
     
     try {
-      // Simulando envío al servidor
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Validar que todos los campos requeridos estén completos
+      if (!formData.name || !formData.lastname || !formData.email || !formData.phone || 
+          !formData.participantType || !formData.company || !formData.position || 
+          formData.interests.length === 0 || !formData.termsAccepted) {
+        throw new Error('Por favor completa todos los campos requeridos');
+      }
+
+      // Crear lead en Supabase
+      const result = await leadsService.createLead(formData);
       
+      if (!result.success) {
+        throw new Error(result.error || 'Error al crear el registro');
+      }
+
       // Mostrar toast de éxito
       toast({
         title: "¡Registro Exitoso! 🎉",
@@ -89,13 +102,13 @@ export function RegistrationSection() {
       });
       
       setIsSubmitted(true);
-      console.log("Form submitted:", formData);
+      console.log("Lead created successfully:", result.data);
       
     } catch (error) {
       // Mostrar toast de error
       toast({
         title: "Error en el registro",
-        description: "Hubo un problema al procesar tu registro. Por favor, intenta nuevamente.",
+        description: error.message || "Hubo un problema al procesar tu registro. Por favor, intenta nuevamente.",
         variant: "destructive",
       });
       console.error("Error submitting form:", error);
