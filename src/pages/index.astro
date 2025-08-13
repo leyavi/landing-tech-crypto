@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { HeroSection } from '../components/HeroSection.jsx';
 import { BenefitsSection } from '../components/BenefitsSection.jsx';
+import { CIPEndorsementSection } from '../components/CIPEndorsementSection.jsx';
 import { SpeakersSection } from '../components/SpeakersSection.jsx';
 import { ScheduleSection } from '../components/ScheduleSection.jsx';
 import { RegistrationSection } from '../components/RegistrationSection.jsx';
@@ -13,6 +14,7 @@ import { FooterSection } from '../components/FooterSection.jsx';
 	<div class="dark min-h-screen bg-stone-900">
 		<HeroSection client:load />
 		<BenefitsSection client:load />
+		<CIPEndorsementSection client:load />
 		<SpeakersSection client:load />
 		<ScheduleSection client:load />
 		<RegistrationSection client:load />
