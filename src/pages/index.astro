@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import { HeroSection } from '../components/HeroSection.jsx';
 import { BenefitsSection } from '../components/BenefitsSection.jsx';
 import { SpeakersSection } from '../components/SpeakersSection.jsx';
+import { ScheduleSection } from '../components/ScheduleSection.jsx';
+import { RegistrationSection } from '../components/RegistrationSection.jsx';
+import { OrganizersSection } from '../components/OrganizersSection.jsx';
+import { FooterSection } from '../components/FooterSection.jsx';
 
 ---
 <Layout>
@@ -10,5 +14,9 @@ import { SpeakersSection } from '../components/SpeakersSection.jsx';
 		<HeroSection client:load />
 		<BenefitsSection client:load />
 		<SpeakersSection client:load />
+		<ScheduleSection client:load />
+		<RegistrationSection client:load />
+		<OrganizersSection client:load />
+		<FooterSection client:load />
 	</div>
 </Layout>
