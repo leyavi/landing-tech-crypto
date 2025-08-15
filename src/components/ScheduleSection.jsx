@@ -1,28 +1,89 @@
-import { Clock, Users, Code, Zap } from "lucide-react";
+import { Clock, Users, Code, Zap, Coffee } from "lucide-react";
 
 export function ScheduleSection() {
   const schedule = [
     {
-      time: "7:00 PM – 7:20 PM",
-      title: "Transformación Digital | RPA | Ciberseguridad",
-      description: "Introducción a la innovación digital y casos reales en automatización y protección de datos.",
+      time: "7:00 PM – 7:10 PM",
+      title: "Transformación Digital | RPA | Automatización | Blockchain",
+      description: "Host del evento - Presentación del evento",
       icon: <Users className="w-5 h-5" />,
-      type: "Introducción"
+      type: "Transformación Digital | RPA | Automatización | Blockchain"
     },
     {
-      time: "7:20 PM – 8:25 PM",
-      title: "Hiperautomatización (RPA) | Integración",
-      description: "Soluciones integradas para optimizar procesos y aumentar eficiencia.",
+      time: "7:10 PM – 7:50 PM",
+      title: "Transformación Digital | RPA | Ciberseguridad",
+      description: [
+        " 1: IA para vender más: Herramientas gratuitas o económicas para PyMES.",
+        " 2: Protege tu negocio: Riesgos de IA que toda PYME debe evitar.",
+        " 3: Automatiza sin complicarte: 3 tareas para delegar HOY a la IA.",
+        " 4: IA hecha en Perú: Casos de éxito replicables.",
+        " 5: El futuro cercano: Prepárate sin gastar de más."
+      ],
       icon: <Zap className="w-5 h-5" />,
       type: "Workshop"
     },
     {
-      time: "8:25 PM – 9:00 PM",
-      title: "Módulo Web3 & Blockchain",
-      description: "Aplicaciones descentralizadas, contratos inteligentes y tendencias en criptoactivos.",
+      time: "7:50 PM – 8:22 PM",
+      title: "Hiperautomatización | RPA | Integración IPA/APA",
+      description: ["1. RPA para PYMEs de Áncash – 10 min.",
+"2. Identifica tus Procesos Automatizables – 12 min",
+"3. Casos Reales y Cómo Empezar – 15 min.",
+"4. Preguntas y cierre – 5 min"],
       icon: <Code className="w-5 h-5" />,
       type: "Panel"
-    }
+    },
+    {
+      time: "8:22 PM – 8:35 PM",
+      title: "Coffee Break",
+      description: "Momento para networking, café y recargar energías.",
+      icon: <Coffee className="w-5 h-5" />,
+      type: "Break"
+    },
+
+    
+ {
+  time: "8:40 PM – 8:55 PM",
+  title: "",
+  description: [
+    "1. Consejos local de ciencias y tecnologías.",
+    "2. Los Municipios y la Responsabilidad en las ciencias y las tecnologías.",
+    
+  ],
+  icon: <Code className="w-5 h-5" />,
+  type: "panel"
+},
+    {
+      time: "8:55 PM – 9:10 PM",
+      title: "Web development",
+      description:
+        "Formación de equipos remotos.",
+      icon: <Code className="w-5 h-5" />,
+      type: "Panel"
+    },
+ {
+  time: "9:10 PM – 9:30 PM",
+  title: "",
+ description: [
+  "1. ¿Qué es blockchain y las criptomonedas?",
+  "2. Contratos inteligentes",
+  "3. ¿Qué son las finanzas descentralizadas?",
+  "4. Casos de uso",
+  "5. Ejercicios prácticos"
+],
+  icon: <Code className="w-5 h-5" />,
+  type: "panel"
+},
+ {
+  time: "9:31 PM – 9:45 PM",
+  title: "",
+description: [
+  "1. Noticias Crypto & Blockchain que están cambiando el mundo.",
+  "2. Análisis on-chain (Arkham)."
+],
+  icon: <Code className="w-5 h-5" />,
+  type: "finalización"
+},
+
   ];
 
   return (
@@ -53,7 +114,7 @@ export function ScheduleSection() {
               {index < schedule.length - 1 && (
                 <div className="absolute left-6 top-16 w-0.5 h-24 bg-stone-700"></div>
               )}
-              
+
               {/* Timeline Dot */}
               <div className="flex-shrink-0 w-12 h-12 bg-[#FF4D0B] rounded-full flex items-center justify-center text-white shadow-lg shadow-[#FF4D0B]/25 z-10">
                 {item.icon}
@@ -72,14 +133,23 @@ export function ScheduleSection() {
                     </span>
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {item.title}
                 </h3>
-                
-                <p className="text-stone-300 leading-relaxed">
-                  {item.description}
-                </p>
+
+                {/* Si description es array, lo mostramos como lista */}
+                {Array.isArray(item.description) ? (
+                  <ul className="list-disc list-inside text-stone-300 space-y-1">
+                    {item.description.map((desc, i) => (
+                      <li key={i}>{desc}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-stone-300 leading-relaxed">
+                    {item.description}
+                  </p>
+                )}
               </div>
             </div>
           ))}
