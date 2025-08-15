@@ -94,14 +94,14 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
                 <div className="text-center bg-white/5 backdrop-blur-sm px-6 py-3 rounded-lg shadow-inner">
                  <div className="flex items-center justify-center gap-3 mb-2">
-                   <img src="src/img/3.png" alt="Dignita.tech logo" className=" h-8" />
+                   <img src="./3.png" alt="Dignita.tech logo" className=" h-8" />
                  </div>
                  <p className="text-stone-400 text-xs">Transformación Digital</p>
                </div>
               <div className="hidden sm:block w-px h-10 bg-white/30"></div>
               <div className="text-center bg-white/5 backdrop-blur-sm px-6 py-3 rounded-lg shadow-inner">
                 <div className="flex items-center justify-center gap-3 mb-2">
-                   <img src="src/img/4.png" alt="Dignita.tech logo" className="h-8" />
+                   <img src="./4.png" alt="Dignita.tech logo" className="h-8" />
                  </div>
                 <p className="text-stone-400 text-xs mt-1">Blockchain & Cripto</p>
               </div>

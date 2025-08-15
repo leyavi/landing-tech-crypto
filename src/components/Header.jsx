@@ -12,7 +12,7 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <img 
-            src="/src/img/dignita.png" 
+            src="./dignita.png" 
             alt="Dignita Logo" 
             className="h-10 w-auto mr-3 drop-shadow-lg"
           />

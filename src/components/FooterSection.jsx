@@ -1,7 +1,6 @@
 import { Mail, Phone, MapPin, ExternalLink, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import img3 from '../img/3.png';
 
 export function FooterSection() {
   return (
@@ -10,10 +9,7 @@ export function FooterSection() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Dignita.tech
-           <img src={img3} alt="" />
-            </h3>
+           <img src="./3.png" alt="Dignita Tech Logo" className="w-auto h-12 md:h-16 lg:h-20 max-w-full object-contain mb-5" />
             <p className="text-stone-300 mb-6 leading-relaxed">
               Transformamos organizaciones a través de la innovación tecnológica. 
               Especialistas en IA, automatización, sistematización y transformación digital.
