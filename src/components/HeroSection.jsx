@@ -1,97 +1,13 @@
-import { useState } from "react";
 import { Button } from "./ui/button";
-import { Calendar, MapPin, Users, Clock, Menu, X } from "lucide-react";
+import { Calendar, MapPin, Users, Clock} from "lucide-react";
+import { Header } from "./Header";
 
-// Header Responsive
-function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    <header className="fixed top-0 left-0 w-full h-[65px] z-50 bg-orange-700 backdrop-blur-lg border-b border-white/10 shadow-lg opacity-95">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <h2 className="text-white font-bold text-xl tracking-wide drop-shadow-md">
-          Tech & <span className="text-stone-900">Crypto</span>
-        </h2>
-
-        {/* Menú Desktop */}
-        <nav className="hidden md:flex items-center gap-8">
-          <a 
-            href="#agendar" 
-            className="text-white hover:text-stone-900 transition-colors font-medium hover:underline underline-offset-4 decoration-2"
-          >
-            Agendar
-          </a>
-          <a 
-            href="#sponsor" 
-            className="text-white hover:text-stone-900 transition-colors font-medium hover:underline underline-offset-4 decoration-2"
-          >
-            Sponsor
-          </a>
-        </nav>
-
-        {/* Botón Desktop */}
-        <div className="hidden md:block">
-          <Button 
-            size="sm" 
-            className="bg-stone-900 hover:bg-stone-800 text-white px-4 shadow-md hover:shadow-lg transition-shadow"
-          >
-            Regístrate
-          </Button>
-        </div>
-
-        {/* Botón hamburguesa Mobile */}
-        <button
-          className="md:hidden text-white hover:bg-white/10 p-1 rounded-md transition-colors"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-
-      {/* Menú Mobile desplegable */}
-      {menuOpen && (
-        <div className="md:hidden bg-orange-700/95 backdrop-blur-lg border-t border-white/10 px-4 py-6 space-y-4 shadow-xl animate-in fade-in slide-in-from-top">
-          <a
-            href="#registrate"
-            className="block text-white hover:text-stone-900 transition-colors font-medium py-2 px-3 rounded hover:bg-white/10"
-            onClick={() => setMenuOpen(false)}
-          >
-            Regístrate
-          </a>
-          <a
-            href="#agendar"
-            className="block text-white hover:text-stone-900 transition-colors font-medium py-2 px-3 rounded hover:bg-white/10"
-            onClick={() => setMenuOpen(false)}
-          >
-            Agendar
-          </a>
-          <a
-            href="#sponsor"
-            className="block text-white hover:text-stone-900 transition-colors font-medium py-2 px-3 rounded hover:bg-white/10"
-            onClick={() => setMenuOpen(false)}
-          >
-            Sponsor
-          </a>
-          <Button
-            size="sm"
-            className="w-full bg-stone-900 hover:bg-stone-800 text-white shadow-md mt-2"
-            onClick={() => setMenuOpen(false)}
-          >
-            Regístrate
-          </Button>
-        </div>
-      )}
-    </header>
-  );
-}
 
 // HeroSection con header integrado
 export function HeroSection() {
   return (
     <>
       <Header />
-
       <section className="relative min-h-screen bg-gradient-to-br from-stone-900 via-stone-900 to-stone-800 flex items-center justify-center overflow-hidden pt-[65px]">
         {/* Fondo abstracto mejorado */}
         <div className="absolute inset-0 opacity-10">
@@ -104,7 +20,7 @@ export function HeroSection() {
           {/* Fecha */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 shadow-md hover:shadow-lg transition-shadow">
             <Calendar className="w-4 h-4 text-white" />
-            <span className="text-white text-sm font-medium">29 agosto 2025 • 7:00 PM - 7:10 PM</span>
+            <span className="text-white text-sm font-medium">29 agosto 2025 • 7:00 PM - 9:45 PM</span>
           </div>
 
           {/* Título con mejor jerarquía */}
@@ -171,19 +87,22 @@ export function HeroSection() {
               Ver Itinerario
             </Button>
           </div>
-          <img src="../img/3.png" alt="" />
 
           {/* Organizadores con mejor diseño */}
           <div className="border-t border-white/20 pt-8 max-w-2xl mx-auto">
             <p className="text-stone-400 text-sm mb-6 tracking-wider">ORGANIZADO POR:</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-              <div className="text-center bg-white/5 backdrop-blur-sm px-6 py-3 rounded-lg shadow-inner">
-                <h4 className="text-white font-semibold tracking-wide">Dignita.tech</h4>
-                <p className="text-stone-400 text-xs mt-1">Transformación Digital</p>
-              </div>
+                <div className="text-center bg-white/5 backdrop-blur-sm px-6 py-3 rounded-lg shadow-inner">
+                 <div className="flex items-center justify-center gap-3 mb-2">
+                   <img src="src/img/3.png" alt="Dignita.tech logo" className=" h-8" />
+                 </div>
+                 <p className="text-stone-400 text-xs">Transformación Digital</p>
+               </div>
               <div className="hidden sm:block w-px h-10 bg-white/30"></div>
               <div className="text-center bg-white/5 backdrop-blur-sm px-6 py-3 rounded-lg shadow-inner">
-                <h4 className="text-white font-semibold tracking-wide">Crypnita</h4>
+                <div className="flex items-center justify-center gap-3 mb-2">
+                   <img src="src/img/4.png" alt="Dignita.tech logo" className="h-8" />
+                 </div>
                 <p className="text-stone-400 text-xs mt-1">Blockchain & Cripto</p>
               </div>
             </div>
