@@ -1,13 +1,9 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
+// astro.config.ts
+import { defineConfig } from 'astro/config'
+import react from '@astrojs/react'
+import tailwind from '@astrojs/tailwind'
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-           vite: {
-           css: {
-             postcss: './postcss.config.cjs',
-           },
-         },
-});
+  build: { assetsPrefix: './' }, // fuerza ./_astro/... en CSS/JS importados
+  integrations: [react(), tailwind()],
+})

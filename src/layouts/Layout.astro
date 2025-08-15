@@ -1,3 +1,8 @@
+---
+// Importamos el CSS en el frontmatter (forma correcta en Astro)
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en" class="dark">
 	<head>
@@ -6,7 +11,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Tech & Crypto Day 2025</title>
-		<link rel="stylesheet" href="./src/styles/global.css" />
+		<!-- ❌ Eliminamos el link relativo que falla en build -->
 	</head>
 	<body class="bg-stone-900">
 		<slot />
