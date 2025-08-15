@@ -128,9 +128,12 @@ export function RegistrationSection() {
             <div className="flex justify-center gap-4">
               <Button variant="outline" className="border-stone-600 text-stone-300 hover:bg-stone-700">
                 Google
+                <img src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000" alt="" className="w-5 h-5" />
               </Button>
               <Button variant="outline" className="border-stone-600 text-stone-300 hover:bg-stone-700">
+              
                 Apple
+                <img src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" className="w-5 h-5" alt="" />
               </Button>
             </div>
           </div>

@@ -3,9 +3,9 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function OrganizersSection() {
   const organizers = [
     {
-      name: "Dignita.tech",
+      name: "Dignita.tecOrganizersSectionh",
       type: "Organizador Principal",
-      logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=100&fit=crop"
+      logo: "../img/dignita.png"
     },
     {
       name: "InnovaLatam", 

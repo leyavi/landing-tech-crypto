@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, ExternalLink, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import img3 from '../img/3.png';
 
 export function FooterSection() {
   return (
@@ -11,6 +12,7 @@ export function FooterSection() {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">
               Dignita.tech
+           <img src={img3} alt="" />
             </h3>
             <p className="text-stone-300 mb-6 leading-relaxed">
               Transformamos organizaciones a través de la innovación tecnológica. 
@@ -26,13 +28,13 @@ export function FooterSection() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#FF4D0B]" />
-                <a href="tel:+51999999999" className="text-stone-300 hover:text-white transition-colors">
-                  +51 999 999 999
+                <a href="tel:+51 930 591 017" className="text-stone-300 hover:text-white transition-colors">
+                  +51 930 591 017"
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-[#FF4D0B]" />
-                <span className="text-stone-300">Lima, Perú</span>
+                <span className="text-stone-300">Nuevo Chimbote, Perú</span>
               </div>
             </div>
 
@@ -69,7 +71,7 @@ export function FooterSection() {
               <h5 className="text-white font-medium mb-2">Tech & Crypto Day 2025</h5>
               <div className="text-stone-400 text-sm space-y-1">
                 <p>29 agosto 2025</p>
-                <p>7:00 PM - 9:00 PM</p>
+                <p>7:00 PM - 9:45 PM</p>
                 <p>Auditorio CIP</p>
               </div>
             </div>
