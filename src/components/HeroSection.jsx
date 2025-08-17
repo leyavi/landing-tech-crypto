@@ -119,7 +119,7 @@ export function HeroSection() {
           </div>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-stone-300 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="text-xl md:text-2xl text-stone-300 mb-12 max-w-4xl mx-auto">
             Un encuentro único para aprender, conectar y crecer en el mundo de la innovación tecnológica. 
             Descubre cómo las últimas tendencias en IA, blockchain, RPA y transformación digital pueden 
             potenciar tu carrera y tu negocio.
