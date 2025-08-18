@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 
 export function FooterSection() {
   return (
-    <footer className="bg-stone-900 border-t border-stone-700">
+    <footer className="bg-black border-t border-stone-700">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Company Info */}
@@ -68,7 +68,7 @@ export function FooterSection() {
               <div className="text-stone-400 text-sm space-y-1">
                 <p>29 agosto 2025</p>
                 <p>7:00 PM - 9:45 PM</p>
-                <p>Auditorio CIP</p>
+                <p>Finalización</p>
               </div>
             </div>
           </div>

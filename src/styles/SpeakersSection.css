@@ -1,0 +1,13 @@
+@keyframes heartbeat {
+  0%, 100% {
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 77, 11, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 77, 11, 0.6);
+  }
+}
+
+.speaker-container {
+  animation: heartbeat 1.5s infinite ease-in-out;
+  transition: transform 0.3s;
+}

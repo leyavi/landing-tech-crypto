@@ -6,15 +6,26 @@ import { SpeakersSection } from '../components/SpeakersSection.jsx';
 import { ScheduleSection } from '../components/ScheduleSection.jsx';
 import { RegistrationSection } from '../components/RegistrationSection.jsx';
 import { FooterSection } from '../components/FooterSection.jsx';
+import { SupportedLeaders } from '../components/SupportedLeaders.jsx';
+import { Place } from '../components/Place.jsx';
+
+
+
 
 ---
 <Layout>
 	<div class="dark min-h-screen bg-stone-900">
 		<HeroSection client:load />
 		<BenefitsSection client:load />
+			<Place client:load />
+
 		<SpeakersSection client:load />
 		<ScheduleSection client:load />
+		<SupportedLeaders client:load />
+
 		<RegistrationSection client:load />
 		<FooterSection client:load />
+	
+
 	</div>
 </Layout>

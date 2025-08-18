@@ -334,15 +334,16 @@ export function RegistrationSection() {
         return null;
     }
   };
+  
 
   return (
-    <section className="py-20 bg-gradient-to-b from-stone-800 to-stone-900">
+    <section className="py-20 bg-gradient-to-b bg-black " >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-md border border-[#FF4D0B] mb-6">
             <span className="text-[#FF4D0B] text-sm font-semibold">Registro</span>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-white mb-6" >
             Reserva tu lugar
           </h2>
           <p className="text-stone-300 text-lg">
@@ -351,9 +352,11 @@ export function RegistrationSection() {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-stone-800 rounded-xl shadow-2xl overflow-hidden border border-stone-700 relative">
+          <div className="bg-black rounded-xl  overflow-hidden  relative border-transparent 
+                transition-all duration-300 transform 
+                shadow-[0_0_15px_rgba(255,255,255,0.1),0_0_5px_rgba(255,77,0,0.2)]
+                hover:scale-105 hover:border-orange-500">
             {/* Orange glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#FF4D0B]/5 via-transparent to-[#FF4D0B]/5 rounded-xl"></div>
             
             <div className="p-8 relative z-10">
               {/* Header with progress */}
@@ -505,5 +508,6 @@ export function RegistrationSection() {
        {/* Toast notifications */}
        <Toaster />
      </section>
+     
    );
  }

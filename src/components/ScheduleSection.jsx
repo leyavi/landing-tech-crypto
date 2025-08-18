@@ -5,37 +5,39 @@ export function ScheduleSection() {
     {
       time: "7:00 PM – 7:10 PM",
       title: "Transformación Digital | RPA | Automatización | Blockchain",
-      description: "Host del evento - Presentación del evento",
+      description: 
+      
+      ["Host del evento - Presentación del evento"],
       icon: <Users className="w-5 h-5" />,
-      type: "Transformación Digital | RPA | Automatización | Blockchain"
+      type: "Panel"
     },
     {
       time: "7:10 PM – 7:50 PM",
       title: "Transformación Digital | RPA | Ciberseguridad",
       description: [
-        " 1: IA para vender más: Herramientas gratuitas o económicas para PyMES.",
-        " 2: Protege tu negocio: Riesgos de IA que toda PYME debe evitar.",
-        " 3: Automatiza sin complicarte: 3 tareas para delegar HOY a la IA.",
-        " 4: IA hecha en Perú: Casos de éxito replicables.",
-        " 5: El futuro cercano: Prepárate sin gastar de más."
+        "  IA para vender más: Herramientas gratuitas o económicas para PyMES.",
+        "  Protege tu negocio: Riesgos de IA que toda PYME debe evitar.",
+        "  Automatiza sin complicarte: 3 tareas para delegar HOY a la IA.",
+        "  IA hecha en Perú: Casos de éxito replicables.",
+        "  El futuro cercano: Prepárate sin gastar de más."
       ],
       icon: <Zap className="w-5 h-5" />,
-      type: "Workshop"
+      type: "Panel"
     },
     {
       time: "7:50 PM – 8:22 PM",
       title: "Hiperautomatización | RPA | Integración IPA/APA",
-      description: ["1. RPA para PYMEs de Áncash – 10 min.",
-"2. Identifica tus Procesos Automatizables – 12 min",
-"3. Casos Reales y Cómo Empezar – 15 min.",
-"4. Preguntas y cierre – 5 min"],
+      description: [" RPA para PYMEs de Áncash – 10 min.",
+" Identifica tus Procesos Automatizables – 12 min",
+" Casos Reales y Cómo Empezar – 15 min.",
+" Preguntas y cierre – 5 min"],
       icon: <Code className="w-5 h-5" />,
       type: "Panel"
     },
     {
       time: "8:22 PM – 8:35 PM",
       title: "Coffee Break",
-      description: "Momento para networking, café y recargar energías.",
+      description: ["Momento para networking, café y recargar energías."],
       icon: <Coffee className="w-5 h-5" />,
       type: "Break"
     },
@@ -45,18 +47,18 @@ export function ScheduleSection() {
   time: "8:40 PM – 8:55 PM",
   title: "",
   description: [
-    "1. Consejos local de ciencias y tecnologías.",
-    "2. Los Municipios y la Responsabilidad en las ciencias y las tecnologías.",
+    " Consejos local de ciencias y tecnologías.",
+    " Los Municipios y la Responsabilidad en las ciencias y las tecnologías.",
     
   ],
   icon: <Code className="w-5 h-5" />,
-  type: "panel"
+  type: "Panel"
 },
     {
       time: "8:55 PM – 9:10 PM",
       title: "Web development",
-      description:
-        "Formación de equipos remotos.",
+      description:["Formación de equipos remotos."]
+        ,
       icon: <Code className="w-5 h-5" />,
       type: "Panel"
     },
@@ -64,34 +66,33 @@ export function ScheduleSection() {
   time: "9:10 PM – 9:30 PM",
   title: "",
  description: [
-  "1. ¿Qué es blockchain y las criptomonedas?",
-  "2. Contratos inteligentes",
-  "3. ¿Qué son las finanzas descentralizadas?",
-  "4. Casos de uso",
-  "5. Ejercicios prácticos"
+  " ¿Qué es blockchain y las criptomonedas?",
+  " Contratos inteligentes",
+  " ¿Qué son las finanzas descentralizadas?",
+  " Casos de uso",
+  " Ejercicios prácticos"
 ],
   icon: <Code className="w-5 h-5" />,
-  type: "panel"
+  type: "Panel"
 },
  {
   time: "9:31 PM – 9:45 PM",
   title: "",
 description: [
-  "1. Noticias Crypto & Blockchain que están cambiando el mundo.",
-  "2. Análisis on-chain (Arkham)."
+  " Noticias Crypto & Blockchain que están cambiando el mundo.",
+  " Análisis on-chain (Arkham)."
 ],
   icon: <Code className="w-5 h-5" />,
-  type: "finalización"
+  type: "Finalización"
 },
 
   ];
 
   return (
-    <section className="py-20 bg-stone-900 relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FF4D0B] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#FF4D0B] rounded-full blur-3xl"></div>
+       
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

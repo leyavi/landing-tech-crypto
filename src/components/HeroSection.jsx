@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Calendar, MapPin, Users, Clock} from "lucide-react";
 import { Header } from "./Header";
+import 'src/styles/HeroSection.css';
 
 
 // HeroSection con header integrado
@@ -8,7 +9,7 @@ export function HeroSection() {
   return (
     <>
       <Header />
-      <section className="relative min-h-screen bg-gradient-to-br from-stone-900 via-stone-900 to-stone-800 flex items-center justify-center overflow-hidden pt-[65px]">
+      <section className="relative min-h-screen bg-gradient-to-br bg-black via-orange-900 to-stone-900 flex items-center justify-center overflow-hidden pt-[65px]">
         {/* Fondo abstracto mejorado */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-[#FF4D0B] rounded-full blur-3xl animate-pulse-slow"></div>
@@ -18,7 +19,7 @@ export function HeroSection() {
 
         <div className="container mx-auto px-4 py-16 md:py-28 text-center relative z-10">
           {/* Fecha */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 shadow-md hover:shadow-lg transition-shadow">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/60 mb-8 shadow-md hover:shadow-lg transition-shadow">
             <Calendar className="w-4 h-4 text-white" />
             <span className="text-white text-sm font-medium">29 agosto 2025 • 7:00 PM - 9:45 PM</span>
           </div>
@@ -33,20 +34,35 @@ export function HeroSection() {
             </h1>
             <div className="w-24 h-1 bg-[#FF4D0B] mx-auto my-6 rounded-full shadow-md"></div>
           </div>
+              <div className="flex justify-center items-center ">
+  <button className="relative w-80 h-12 mb-5 bg-[#FF4D0B] text-stone-300 rounded-lg shadow-[0_0_7px_rgba(255,255,255,0.5)] text-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+  
+    <a href="#registro">
+
+  Registro obligatorio
+
+    </a>
+    <span className="absolute border-snake pointer-events-none"></span>
+  </button>
+</div>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-stone-300 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-            Un encuentro único para aprender, conectar y crecer en el mundo de la innovación tecnológica. 
-            Descubre cómo las últimas tendencias en IA, blockchain, RPA y transformación digital pueden 
-            potenciar tu carrera y tu negocio.
+          <p className="text-xl md:text-2xl text-stone-300 mb-12 max-w-4xl mx-auto leading-relaxed ">
+            Transformación digital, sistematización,
+automatización & IA + blockchain & cripto.
+Inspirando el futuro tecnológico del Perú.
           </p>
+         
+ 
+
+
 
           {/* Features con mejor diseño */}
           <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
             {[
               {
                 icon: <MapPin className="w-6 h-6 text-[#FF4D0B] mb-3 mx-auto" />,
-                title: "Auditorio CIP",
+                title: "Finalización",
                 desc: "Nuevo Chimbote, Perú"
               },
               {
@@ -56,7 +72,7 @@ export function HeroSection() {
               },
               {
                 icon: <Clock className="w-6 h-6 text-[#FF4D0B] mb-3 mx-auto" />,
-                title: "2 Horas Intensivas",
+                title: "3 Horas Intensivas",
                 desc: "Contenido de valor"
               }
             ].map((item, index) => (
@@ -77,7 +93,7 @@ export function HeroSection() {
               size="lg" 
               className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
             >
-              Regístrate Ahora
+              Finalización
             </Button>
             <Button 
               size="lg" 

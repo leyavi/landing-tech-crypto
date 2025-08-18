@@ -201,7 +201,7 @@ Formulario → Validación → Supabase → Toast → Confirmación
 ## 🎯 Próximos Pasos
 
 1. **Autenticación**: Implementar login/registro de usuarios
-2. **Dashboard**: Crear panel de administración para ver leads
+2. **Dashboard**: Crear Panel de administración para ver leads
 3. **Notificaciones**: Enviar emails de confirmación
 4. **Analytics**: Agregar métricas y reportes
 5. **Validación**: Implementar validación más robusta en el backend
