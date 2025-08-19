@@ -121,12 +121,12 @@ export function RegistrationSection() {
     switch (currentStep) {
       case 1:
         return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold text-white mb-6">Datos Personales</h3>
+          <div className="space-y-5">
+            <h3 className="text-xl font-semibold text-white mb-4">Datos Personales</h3>
             
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-white">Nombre *</Label>
+                <Label htmlFor="name" className="text-white text-sm">Nombre *</Label>
                 <Input
                   id="name"
                   name="name"
@@ -135,11 +135,11 @@ export function RegistrationSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                  className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="lastname" className="text-white">Apellidos *</Label>
+                <Label htmlFor="lastname" className="text-white text-sm">Apellidos *</Label>
                 <Input
                   id="lastname"
                   name="lastname"
@@ -148,13 +148,13 @@ export function RegistrationSection() {
                   value={formData.lastname}
                   onChange={handleChange}
                   required
-                  className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                  className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-white">Correo Electrónico *</Label>
+              <Label htmlFor="email" className="text-white text-sm">Correo Electrónico *</Label>
               <Input
                 id="email"
                 name="email"
@@ -163,12 +163,12 @@ export function RegistrationSection() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="phone" className="text-white">Celular *</Label>
+              <Label htmlFor="phone" className="text-white text-sm">Celular *</Label>
               <Input
                 id="phone"
                 name="phone"
@@ -177,7 +177,7 @@ export function RegistrationSection() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
               />
             </div>
           </div>
@@ -185,8 +185,8 @@ export function RegistrationSection() {
 
       case 2:
         return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold text-white mb-6">Tipo de Participante</h3>
+          <div className="space-y-5">
+            <h3 className="text-xl font-semibold text-white mb-4">Tipo de Participante</h3>
             
             <div className="space-y-3">
               {participantTypes.map((type) => {
@@ -196,7 +196,7 @@ export function RegistrationSection() {
                     key={type.id}
                     type="button"
                     onClick={() => setFormData(prev => ({ ...prev, participantType: type.id }))}
-                    className={`w-full p-4 rounded-lg border-2 transition-all duration-200 text-left ${
+                    className={`w-full p-3 rounded-lg border-2 transition-all duration-200 text-left ${
                       formData.participantType === type.id
                         ? 'border-[#FF4D0B] bg-[#FF4D0B]/10'
                         : 'border-stone-600 bg-stone-700 hover:border-stone-500'
@@ -215,11 +215,11 @@ export function RegistrationSection() {
 
       case 3:
         return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold text-white mb-6">Información Profesional</h3>
+          <div className="space-y-5">
+            <h3 className="text-xl font-semibold text-white mb-4">Información Profesional</h3>
             
             <div className="space-y-2">
-              <Label htmlFor="company" className="text-white">Empresa / Institución *</Label>
+              <Label htmlFor="company" className="text-white text-sm">Empresa / Institución *</Label>
               <Input
                 id="company"
                 name="company"
@@ -228,12 +228,12 @@ export function RegistrationSection() {
                 value={formData.company}
                 onChange={handleChange}
                 required
-                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="position" className="text-white">Cargo / Área *</Label>
+              <Label htmlFor="position" className="text-white text-sm">Cargo / Área *</Label>
               <Input
                 id="position"
                 name="position"
@@ -242,19 +242,19 @@ export function RegistrationSection() {
                 value={formData.position}
                 onChange={handleChange}
                 required
-                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B]"
+                className="bg-stone-700 border-stone-600 text-white placeholder:text-stone-400 focus:border-[#FF4D0B] focus:ring-[#FF4D0B] h-11"
               />
             </div>
 
             <div className="space-y-3">
-              <Label className="text-white">Intereses (selecciona uno o más) *</Label>
-              <div className="grid grid-cols-2 gap-3">
+              <Label className="text-white text-sm">Intereses (selecciona uno o más) *</Label>
+              <div className="grid grid-cols-2 gap-2">
                 {interests.map((interest) => (
                   <button
                     key={interest}
                     type="button"
                     onClick={() => handleInterestToggle(interest)}
-                    className={`p-3 rounded-lg border-2 transition-all duration-200 text-sm ${
+                    className={`p-2 rounded-lg border-2 transition-all duration-200 text-xs ${
                       formData.interests.includes(interest)
                         ? 'border-[#FF4D0B] bg-[#FF4D0B]/10 text-[#FF4D0B]'
                         : 'border-stone-600 bg-stone-700 text-white hover:border-stone-500'
@@ -270,13 +270,13 @@ export function RegistrationSection() {
 
       case 4:
         return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold text-white mb-6">Confirmación</h3>
+          <div className="space-y-5">
+            <h3 className="text-xl font-semibold text-white mb-4">Confirmación</h3>
             
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-white">Resumen de tu registro:</h4>
               
-              <div className="bg-stone-700 rounded-lg p-4 space-y-2">
+                              <div className="bg-black border border-[#FF4D0B]/20 rounded-lg p-4 space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-stone-300">Nombre:</span>
                   <span className="text-white">{formData.name} {formData.lastname}</span>
@@ -303,7 +303,7 @@ export function RegistrationSection() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-stone-300">Intereses:</span>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1">
                     {formData.interests.map((interest) => (
                       <span key={interest} className="px-2 py-1 bg-[#FF4D0B] text-white text-xs rounded-full">
                         {interest}
@@ -337,32 +337,36 @@ export function RegistrationSection() {
   
 
   return (
-    <section className="py-20 bg-gradient-to-b bg-black " >
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-md border border-[#FF4D0B] mb-6">
+    <section id="registration" className="py-16 bg-gradient-to-b from-black relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-20 w-24 h-24 bg-[#FF4D0B] rounded-full blur-2xl"></div>
+        <div className="absolute bottom-10 right-20 w-32 h-32 bg-[#FF4D0B] rounded-full blur-2xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-12">
+          <div className="inline-block px-6 py-3 rounded-lg border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
             <span className="text-[#FF4D0B] text-sm font-semibold">Registro</span>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-6" >
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Reserva tu lugar
           </h2>
-          <p className="text-stone-300 text-lg">
+          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
             Completa tu registro en 4 simples pasos
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-black rounded-xl  overflow-hidden  relative border-transparent 
-                transition-all duration-300 transform 
-                shadow-[0_0_15px_rgba(255,255,255,0.1),0_0_5px_rgba(255,77,0,0.2)]
-                hover:scale-105 hover:border-orange-500">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-black rounded-2xl overflow-hidden relative border border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500">
             {/* Orange glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FF4D0B]/5 to-transparent opacity-50"></div>
             
-            <div className="p-8 relative z-10">
+            <div className="p-6 md:p-8 relative z-10">
               {/* Header with progress */}
-              <div className="flex justify-between items-start mb-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Registro</h3>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Registro</h3>
                   <p className="text-stone-300 text-sm">Paso {currentStep} de {totalSteps}</p>
                   
                   {/* Progress bar */}
@@ -385,129 +389,128 @@ export function RegistrationSection() {
                   </p>
                 </div>
                 
-                {/* Available spots badge */}
-                <div className="flex items-center gap-2 px-3 py-2 bg-[#FF4D0B] rounded-full">
-                  <Users className="w-4 h-4 text-white" />
-                  <span className="text-white text-sm font-medium">47 cupos disponibles</span>
-                </div>
+                                 {/* Available spots badge */}
+                 <div className="flex items-center gap-2 px-3 py-2 bg-[#FF4D0B] rounded-lg self-start">
+                   <Users className="w-4 h-4 text-white" />
+                   <span className="text-white text-sm font-medium">50+ cupos disponibles</span>
+                 </div>
               </div>
 
-                             {/* Form content or success message */}
-               {isSubmitted ? (
-                 <div className="text-center py-12">
-                   <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                     <CheckCircle className="w-10 h-10 text-green-500" />
-                   </div>
-                   
-                   <h3 className="text-2xl font-bold text-white mb-4">
-                     ¡Registro Completado!
-                   </h3>
-                   
-                   <p className="text-stone-300 text-lg mb-8 max-w-md mx-auto">
-                     Tu lugar ha sido reservado exitosamente. Recibirás un email de confirmación con todos los detalles del evento.
-                   </p>
-                   
-                   <div className="bg-stone-700 rounded-lg p-6 mb-8">
-                     <h4 className="text-lg font-semibold text-white mb-4">Resumen de tu registro:</h4>
-                     <div className="space-y-2 text-left">
-                       <div className="flex justify-between">
-                         <span className="text-stone-300">Nombre:</span>
-                         <span className="text-white">{formData.name} {formData.lastname}</span>
-                       </div>
-                       <div className="flex justify-between">
-                         <span className="text-stone-300">Email:</span>
-                         <span className="text-white">{formData.email}</span>
-                       </div>
-                       <div className="flex justify-between">
-                         <span className="text-stone-300">Tipo:</span>
-                         <span className="text-white">{participantTypes.find(t => t.id === formData.participantType)?.label}</span>
-                       </div>
-                       <div className="flex justify-between">
-                         <span className="text-stone-300">Empresa:</span>
-                         <span className="text-white">{formData.company}</span>
-                       </div>
-                     </div>
-                   </div>
-                   
-                   <Button
-                     onClick={() => {
-                       setIsSubmitted(false);
-                       setCurrentStep(1);
-                       setFormData({
-                         name: "",
-                         lastname: "",
-                         email: "",
-                         phone: "",
-                         participantType: "",
-                         company: "",
-                         position: "",
-                         interests: [],
-                         termsAccepted: false
-                       });
-                     }}
-                     className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white"
-                   >
-                     Registrar otra persona
-                   </Button>
-                 </div>
-               ) : (
-                 <>
-                   <form onSubmit={handleSubmit} className="space-y-6">
-                     {renderStepContent()}
+              {/* Form content or success message */}
+              {isSubmitted ? (
+                <div className="text-center py-8">
+                  <div className="w-16 h-16 bg-[#FF4D0B]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-8 h-8 text-[#FF4D0B]" />
+                  </div>
+                  
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                    ¡Registro Completado!
+                  </h3>
+                  
+                  <p className="text-stone-300 text-base mb-6 max-w-md mx-auto">
+                    Tu lugar ha sido reservado exitosamente. Recibirás un email de confirmación con todos los detalles del evento.
+                  </p>
+                  
+                  <div className="bg-black border border-[#FF4D0B]/20 rounded-lg p-4 mb-6 text-sm">
+                    <h4 className="text-base font-semibold text-white mb-3">Resumen de tu registro:</h4>
+                    <div className="space-y-2 text-left">
+                      <div className="flex justify-between">
+                        <span className="text-stone-300">Nombre:</span>
+                        <span className="text-white">{formData.name} {formData.lastname}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-stone-300">Email:</span>
+                        <span className="text-white">{formData.email}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-stone-300">Tipo:</span>
+                        <span className="text-white">{participantTypes.find(t => t.id === formData.participantType)?.label}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-stone-300">Empresa:</span>
+                        <span className="text-white">{formData.company}</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <Button
+                    onClick={() => {
+                      setIsSubmitted(false);
+                      setCurrentStep(1);
+                      setFormData({
+                        name: "",
+                        lastname: "",
+                        email: "",
+                        phone: "",
+                        participantType: "",
+                        company: "",
+                        position: "",
+                        interests: [],
+                        termsAccepted: false
+                      });
+                    }}
+                    className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white"
+                  >
+                    Registrar otra persona
+                  </Button>
+                </div>
+              ) : (
+                <>
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    {renderStepContent()}
 
-                     {/* Navigation buttons */}
-                     <div className="flex justify-between pt-6">
-                       <Button
-                         type="button"
-                         onClick={prevStep}
-                         disabled={currentStep === 1}
-                         variant="outline"
-                         className="border-stone-600 text-stone-300 hover:bg-stone-700 disabled:opacity-50"
-                       >
-                         <ArrowLeft className="w-4 h-4 mr-2" />
-                         Anterior
-                       </Button>
-                       
-                       {currentStep < totalSteps ? (
-                         <Button
-                           type="button"
-                           onClick={nextStep}
-                           className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white"
-                         >
-                           Siguiente
-                           <ArrowRight className="w-4 h-4 ml-2" />
-                         </Button>
-                       ) : (
-                         <Button
-                           type="submit"
-                           disabled={!formData.termsAccepted || isSubmitting}
-                           className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white disabled:opacity-50"
-                         >
-                           {isSubmitting ? (
-                             <>
-                               <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                               Procesando...
-                             </>
-                           ) : (
-                             <>
-                               <Check className="w-4 h-4 mr-2" />
-                               Reservar mi lugar
-                             </>
-                           )}
-                         </Button>
-                       )}
-                     </div>
-                   </form>
-                 </>
-               )}
+                    {/* Navigation buttons */}
+                    <div className="flex justify-between pt-4">
+                      <Button
+                        type="button"
+                        onClick={prevStep}
+                        disabled={currentStep === 1}
+                        variant="outline"
+                        className="border-stone-600 text-stone-300 hover:bg-stone-700 disabled:opacity-50 text-sm"
+                      >
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                        Anterior
+                      </Button>
+                      
+                      {currentStep < totalSteps ? (
+                        <Button
+                          type="button"
+                          onClick={nextStep}
+                          className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white text-sm"
+                        >
+                          Siguiente
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      ) : (
+                        <Button
+                          type="submit"
+                          disabled={!formData.termsAccepted || isSubmitting}
+                          className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white disabled:opacity-50 text-sm"
+                        >
+                          {isSubmitting ? (
+                            <>
+                              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                              Procesando...
+                            </>
+                          ) : (
+                            <>
+                              <Check className="w-4 h-4 mr-2" />
+                              Reservar mi lugar
+                            </>
+                          )}
+                        </Button>
+                      )}
+                    </div>
+                  </form>
+                </>
+              )}
             </div>
           </div>
-                 </div>
-       </div>
-       
-       {/* Toast notifications */}
-       <Toaster />
-     </section>
-     
-   );
- }
+        </div>
+      </div>
+      
+      {/* Toast notifications */}
+      <Toaster />
+    </section>
+  );
+}

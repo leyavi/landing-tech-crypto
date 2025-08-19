@@ -1,9 +1,9 @@
-import { Award, Users, TrendingUp , } from "lucide-react";
+import { BookOpen, Bot, Users, Network, Award } from "lucide-react";
 
 export function BenefitsSection() {
   const benefits = [
  {
-  icon: <Award className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
+  icon: <BookOpen className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
   title: <span className="font-bold text-center block">Framework & Casos Reales</span>,
   description: (
     <p className="text-center">
@@ -13,7 +13,7 @@ export function BenefitsSection() {
 },
        {
         
-  icon: <Award className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
+  icon: <Bot className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
   title: <span className="font-bold text-center block">Automatización & IA</span>,
   description: (
     <p className="text-center">
@@ -33,7 +33,7 @@ export function BenefitsSection() {
     ),
   },
   {
-    icon: <TrendingUp className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
+    icon: <Network className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
     title: <span className="font-bold text-center block">Networking Premium</span>,
     description: (
       <p className="text-center">
@@ -42,7 +42,7 @@ export function BenefitsSection() {
     ),
   },
   {
-    icon: <TrendingUp className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
+    icon: <Award className="w-20 h-20 text-[#FF4D0B] mx-auto" />,
     title: <span className="font-bold text-center block">Certificación CIP</span>,
     description: (
       <p className="text-center">
@@ -54,10 +54,10 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="py-20 bg-black">
+    <section id="benefits" className="py-20 bg-gradient-to-b from-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-md border border-[#FF4D0B] mb-6">
+          <div className="inline-block px-4 py-2 rounded-lg border border-[#FF4D0B] mb-6">
             <span className="text-[#FF4D0B] text-sm font-semibold">Beneficios</span>
           </div>
           <h2 className="text-4xl font-bold text-white mb-6">

@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { HeroSection } from '../components/HeroSection.jsx';
 import { BenefitsSection } from '../components/BenefitsSection.jsx';
+import { ContentSection } from '../components/ContentSection.jsx';
+import { StatsSection } from '../components/StatsSection.jsx';
 import { SpeakersSection } from '../components/SpeakersSection.jsx';
 import { ScheduleSection } from '../components/ScheduleSection.jsx';
 import { RegistrationSection } from '../components/RegistrationSection.jsx';
@@ -17,15 +19,13 @@ import { Place } from '../components/Place.jsx';
 	<div class="dark min-h-screen bg-stone-900">
 		<HeroSection client:load />
 		<BenefitsSection client:load />
-			<Place client:load />
-
+		<ContentSection client:load />
+		<StatsSection client:load />
 		<SpeakersSection client:load />
+		<Place client:load />
 		<ScheduleSection client:load />
-		<SupportedLeaders client:load />
-
 		<RegistrationSection client:load />
+		<SupportedLeaders client:load />
 		<FooterSection client:load />
-	
-
 	</div>
 </Layout>

@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 
 export function FooterSection() {
   return (
-    <footer className="bg-black border-t border-stone-700">
+    <footer id="footer" className="bg-black border-t border-[#FF4D0B]/20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Company Info */}

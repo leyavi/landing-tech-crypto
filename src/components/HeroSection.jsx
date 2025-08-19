@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <>
       <Header />
-      <section className="relative min-h-screen bg-gradient-to-br bg-black via-orange-900 to-stone-900 flex items-center justify-center overflow-hidden pt-[65px]">
+      <section id="hero" className="min-h-screen bg-gradient-to-b from-black to-stone-900 relative overflow-hidden flex items-center">
         {/* Fondo abstracto mejorado */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-[#FF4D0B] rounded-full blur-3xl animate-pulse-slow"></div>
@@ -27,7 +27,7 @@ export function HeroSection() {
           {/* Título con mejor jerarquía */}
           <div className="mb-10">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight tracking-tight drop-shadow-xl">
-              Tech & Crypto<br />
+              Tech & Blockchain<br />
               <span className="text-[#FF4D0B] bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700 text-transparent">
                 Day 2025
               </span>

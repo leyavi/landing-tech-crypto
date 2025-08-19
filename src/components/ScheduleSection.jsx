@@ -89,16 +89,17 @@ description: [
   ];
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
+    <section id="schedule" className="py-20 bg-gradient-to-b from-black relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
        
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-md bg-[#FF4D0B]/10 border border-[#FF4D0B] mb-6">
-            <span className="text-[#FF4D0B] text-sm font-semibold">Itinerario</span>
+          <div className="inline-block px-6 py-3 rounded-lg border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+            <span className="text-[#FF4D0B] text-sm font-semibold">Cronograma</span>
           </div>
           <h2 className="text-4xl font-bold text-white mb-6">
             Itinerario del evento
