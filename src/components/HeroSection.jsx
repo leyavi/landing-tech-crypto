@@ -138,7 +138,7 @@ export function HeroSection() {
           <div className="text-center mb-8">
             <Button
               size="lg"
-              className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white shadow-lg px-10 py-6 text-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm registration-button-pulse rounded-2xl"
+              className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white shadow-lg px-10 py-6 text-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm registration-button-pulse "
               onClick={() => {
                 const registrationSection = document.getElementById('registration');
                 if (registrationSection) {

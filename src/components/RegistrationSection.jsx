@@ -346,7 +346,7 @@ export function RegistrationSection() {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <div className="inline-block px-6 py-3 rounded-lg border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+          <div className="inline-block px-6 py-3 rounded-2xl border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
             <span className="text-[#FF4D0B] text-sm font-semibold">Registro</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

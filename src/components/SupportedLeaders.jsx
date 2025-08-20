@@ -89,7 +89,7 @@ export function SupportedLeaders() {
     <section id="allies" className="py-20 bg-gradient-to-b from-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+          <div className="inline-block px-6 py-3 rounded-2xl border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
             <span className="text-[#FF4D0B] text-sm font-semibold">Aliados Estratégicos</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
