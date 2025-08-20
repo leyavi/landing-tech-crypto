@@ -1,0 +1,115 @@
+/* ========================================
+   ESTILOS DEL PROFILES SECTION
+   ======================================== */
+
+/* ========================================
+   ESTILOS DE LAS CARDS DE PERFILES
+   ======================================== */
+.profile-card {
+  min-height: 400px;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(24px);
+  border: 2px solid rgba(255, 77, 11, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 77, 11, 0.1);
+}
+
+/* ========================================
+   ICONOS DE PERFIL
+   ======================================== */
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  padding: 1.5rem;
+  background: rgba(255, 77, 11, 0.2);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover .profile-icon {
+  background: rgba(255, 77, 11, 0.3);
+  transform: scale(1.1);
+}
+
+/* ========================================
+   TIPOGRAFÍA DE PERFILES
+   ======================================== */
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.profile-subtitle {
+  font-size: 1rem;
+  color: #FF4D0B;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profile-description {
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ========================================
+   LISTA DE BENEFICIOS
+   ======================================== */
+.profile-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.benefit-dot {
+  width: 6px;
+  height: 6px;
+  background: #FF4D0B;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  .profile-card {
+    min-height: 350px;
+    padding: 1.5rem;
+  }
+
+  .profile-icon {
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+  }
+
+  .profile-title {
+    font-size: 1.25rem;
+  }
+}

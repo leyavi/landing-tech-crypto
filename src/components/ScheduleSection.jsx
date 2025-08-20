@@ -35,7 +35,7 @@ export function ScheduleSection() {
       type: "Panel"
     },
     {
-      time: "8:22 PM – 8:35 PM",
+      time: "8:22 PM – 8:40 PM",
       title: "Coffee Break",
       description: ["Momento para networking, café y recargar energías."],
       icon: <Coffee className="w-5 h-5" />,
@@ -43,17 +43,7 @@ export function ScheduleSection() {
     },
 
     
- {
-  time: "8:40 PM – 8:55 PM",
-  title: "",
-  description: [
-    " Consejos local de ciencias y tecnologías.",
-    " Los Municipios y la Responsabilidad en las ciencias y las tecnologías.",
-    
-  ],
-  icon: <Code className="w-5 h-5" />,
-  type: "Panel"
-},
+
     {
       time: "8:55 PM – 9:10 PM",
       title: "Web development",
@@ -98,14 +88,14 @@ description: [
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-3 rounded-lg border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
-            <span className="text-[#FF4D0B] text-sm font-semibold">Cronograma</span>
+          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+            <span className="text-[#FF4D0B] text-sm font-semibold">Agenda</span>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Itinerario del evento
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Cronograma del <span className="text-[#FF4D0B]">Evento</span>
           </h2>
-          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
-            Agenda diseñada para maximizar el aprendizaje y la interacción entre participantes
+          <p className="text-stone-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Una jornada intensiva de 3 horas diseñada para maximizar tu aprendizaje y networking
           </p>
         </div>
 
@@ -123,7 +113,7 @@ description: [
               </div>
 
               {/* Content */}
-              <div className="ml-8 flex-1 bg-stone-800/50 backdrop-blur-sm rounded-xl p-6 border border-stone-700 hover:border-[#FF4D0B]/50 transition-all duration-300">
+              <div className="ml-8 flex-1 bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-6 border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div className="flex items-center gap-3 mb-2 md:mb-0">
                     <Clock className="w-4 h-4 text-[#FF4D0B]" />

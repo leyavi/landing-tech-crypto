@@ -65,12 +65,12 @@ export function Place() {
             <div className="space-y-8">
               {/* Dirección principal */}
               <div 
-                className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-8 border border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500"
+                className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-8 border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-[#FF4D0B] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#FF4D0B] rounded-2xl flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -144,7 +144,7 @@ export function Place() {
                   
                   {/* Overlay con información */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                    <div className="bg-black/70 backdrop-blur-sm rounded-xl p-4 border border-[#FF4D0B]/30">
+                    <div className="bg-black/70 backdrop-blur-sm rounded-2xl p-4 border border-[#FF4D0B]/30">
                       <h4 className="text-white font-semibold mb-2">Institución Profesional</h4>
                       <p className="text-white text-sm">
                         Espacio oficial del Colegio de Ingenieros del Perú para eventos tecnológicos
@@ -162,7 +162,7 @@ export function Place() {
               <div className="mt-8 text-center">
                 <button 
                   onClick={handleGoogleMapsClick}
-                  className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white px-8 py-4 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#FF4D0B]/25 flex items-center mx-auto"
+                  className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white px-6 py-3 rounded-2xl font-medium transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#FF4D0B]/25 flex items-center gap-2"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />

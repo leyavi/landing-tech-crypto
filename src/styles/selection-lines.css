@@ -1,0 +1,113 @@
+/* ========================================
+   LÍNEAS NARANJAS - TODAS LAS VARIANTES
+   ======================================== */
+
+@layer components {
+  /* ========================================
+     BASE DE LÍNEA NARANJA
+     ======================================== */
+  .selection-line {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .selection-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF4D0B, #FF6B35);
+    transition: width 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .selection-line:focus::after,
+  .selection-line:active::after,
+  .selection-line:hover::after {
+    width: 100%;
+  }
+
+  /* ========================================
+     VARIANTE PARA ELEMENTOS CON PADDING
+     ======================================== */
+  .selection-line-padded::after {
+    bottom: 4px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  /* ========================================
+     VARIANTE PARA BOTONES
+     ======================================== */
+  .selection-line-button::after {
+    bottom: 2px;
+    height: 2px;
+    background: linear-gradient(90deg, #FF4D0B, #FF6B35, #FF8A5C);
+    box-shadow: 0 0 8px rgba(255, 77, 11, 0.4);
+  }
+
+  /* ========================================
+     VARIANTE PARA ENLACES DE NAVEGACIÓN
+     ======================================== */
+  .selection-line-nav::after {
+    bottom: -2px;
+    height: 2px;
+    background: linear-gradient(90deg, #FF4D0B, #FF6B35);
+    border-radius: 1px;
+  }
+
+  /* ========================================
+     VARIANTE PARA ICONOS
+     ======================================== */
+  .selection-line-icon::after {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF4D0B, #FF6B35);
+    border-radius: 1px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .selection-line-icon:focus::after,
+  .selection-line-icon:active::after,
+  .selection-line-icon:hover::after {
+    width: 80%;
+  }
+
+  /* ========================================
+     VARIANTE PARA CARDS Y CONTENEDORES
+     ======================================== */
+  .selection-line-card::after {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FF4D0B, #FF6B35, #FF8A5C);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .selection-line-card:focus::after,
+  .selection-line-card:active::after,
+  .selection-line-card:hover::after {
+    width: 100%;
+  }
+
+  /* ========================================
+     ANIMACIÓN DE ENTRADA PARA ELEMENTOS
+     ======================================== */
+  .selection-line-enter {
+    animation: lineEnter 0.6s ease-out;
+  }
+
+  /* ========================================
+     EFECTO DE PULSO PARA ELEMENTOS ACTIVOS
+     ======================================== */
+  .selection-line-pulse::after {
+    animation: linePulse 2s ease-in-out infinite;
+  }
+}

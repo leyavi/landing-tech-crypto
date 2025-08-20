@@ -1,0 +1,17 @@
+/* ========================================
+   ESTILOS DEL HEADER
+   ======================================== */
+
+/* ========================================
+   BOTÓN DE REGISTRO CON BORDE PULSANTE
+   ======================================== */
+.registration-button-pulse {
+  animation: borderPulse 2s ease-in-out infinite;
+  border: 2px solid white;
+}
+
+.registration-button-pulse:hover {
+  animation: none;
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}

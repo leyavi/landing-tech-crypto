@@ -1,0 +1,8 @@
+/* ========================================
+   ARCHIVO PRINCIPAL DE ANIMACIONES
+   ======================================== */
+
+/* Importar todos los archivos de animación */
+@import './keyframes.css';
+@import './selection-lines.css';
+@import './transitions.css';

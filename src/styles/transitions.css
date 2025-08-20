@@ -1,0 +1,114 @@
+/* ========================================
+   TRANSICIONES PERSONALIZADAS
+   ======================================== */
+
+/* ========================================
+   TRANSICIONES PARA CARDS
+   ======================================== */
+.card-transition {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-transition:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 77, 11, 0.1);
+}
+
+/* ========================================
+   TRANSICIONES PARA BOTONES
+   ======================================== */
+.button-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-transition:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 77, 11, 0.3);
+}
+
+/* ========================================
+   TRANSICIONES PARA ICONOS
+   ======================================== */
+.icon-transition {
+  transition: all 0.3s ease;
+}
+
+.icon-transition:hover {
+  transform: scale(1.1);
+  background: rgba(255, 77, 11, 0.2);
+}
+
+/* ========================================
+   TRANSICIONES PARA ENLACES
+   ======================================== */
+.link-transition {
+  transition: all 0.3s ease;
+}
+
+.link-transition:hover {
+  color: #FF4D0B;
+  background: rgba(255, 77, 11, 0.1);
+  border-color: rgba(255, 77, 11, 0.4);
+}
+
+/* ========================================
+   TRANSICIONES PARA IMÁGENES
+   ======================================== */
+.image-transition {
+  transition: transform 0.3s ease;
+}
+
+.image-transition:hover {
+  transform: scale(1.1);
+}
+
+/* ========================================
+   TRANSICIONES PARA CARRUSELES
+   ======================================== */
+.carousel-transition {
+  transition: transform 0.7s cubic-bezur(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   TRANSICIONES PARA SOMBRAS
+   ======================================== */
+.shadow-transition {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-transition:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 77, 11, 0.1);
+}
+
+/* ========================================
+   TRANSICIONES PARA BORDES
+   ======================================== */
+.border-transition {
+  transition: border-color 0.3s ease;
+}
+
+.border-transition:hover {
+  border-color: rgba(255, 77, 11, 0.6);
+}
+
+/* ========================================
+   TRANSICIONES PARA FONDOS
+   ======================================== */
+.background-transition {
+  transition: background-color 0.3s ease;
+}
+
+.background-transition:hover {
+  background: rgba(255, 77, 11, 0.1);
+}
+
+/* ========================================
+   TRANSICIONES PARA TEXTO
+   ======================================== */
+.text-transition {
+  transition: color 0.3s ease;
+}
+
+.text-transition:hover {
+  color: #FF4D0B;
+}

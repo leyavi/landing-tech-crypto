@@ -89,25 +89,15 @@ export function SupportedLeaders() {
     <section id="allies" className="py-20 bg-gradient-to-b from-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-md border border-[#FF4D0B] mb-6">
-            <span className="text-[#FF4D0B] text-sm font-semibold">Speakers</span>
+          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+            <span className="text-[#FF4D0B] text-sm font-semibold">Aliados Estratégicos</span>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Respaldado por <span className="text-[#FF4D0B]">lideres</span> de industria
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Respaldado por <span className="text-[#FF4D0B]">líderes</span> del sector
           </h2>
-          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
-            Organizaciones que apoyan la transformación
-digital y el avance tecnológico en el Perú
+          <p className="text-stone-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Organizaciones e instituciones que confían en nuestra visión de transformación digital
           </p>
-          <h2 className="text-[#FF4D0B] text-4xl font-bold">Patrocinadores Principales</h2>
-        <div className="flex justify-center items-center">
-  <img
-    src="./SchoolIcon.png"
-    alt="Icono Escuela"
-    className="w-auto h-60 object-contain mt-20"
-  />
-</div>
-         
         </div>
 
    
@@ -130,7 +120,7 @@ digital y el avance tecnológico en el Perú
               <div key={pageIndex} className="min-w-full px-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {strategicAllies.slice(pageIndex * 3, pageIndex * 3 + 3).map((ally, index) => (
-                    <div key={index} className="bg-stone-800 rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div key={index} className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-6 border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105 flex flex-col items-center justify-center text-center">
                       <img src={ally.image} alt={ally.name} className="w-20 h-20 mb-2 object-cover" />
                       <h3 className="text-white font-bold text-lg">{ally.name}</h3>
                       <p className="text-stone-300 text-sm">{ally.type}</p>

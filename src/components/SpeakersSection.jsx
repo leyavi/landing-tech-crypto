@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import 'src/styles/SpeakersSection.css';
 
 
 export function SpeakersSection() {
@@ -33,7 +32,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
     },
        {
       img: {
-        src: "./Antonio.png",
+        src: "./Antonio2.jpeg",
         className: "w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
       },
       etiqueta: {
@@ -61,7 +60,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
     
     {
       img: {
-        src: "./ceoD.png",
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
         className: "w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
       },
       etiqueta: {
@@ -86,28 +85,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
     
     
     
-    {
-      img: {
-        src: "./Antonio.png",
-        className: "w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
-      },
-      etiqueta: {
-        text: "Smart Automation Architect – Banco Pichincha Perú",
-        className: "bg-[#FF4D0B] text-black px-2 py-1 rounded-full text-xs font-semibold inline-block"
-      },
-      name: {
-        text: "Luis Marquez",
-        className: "text-lg font-bold text-white mt-2"
-      },
-      role: {
-        text: "IPA/APA",
-        className: "text-[#FF4D0B] text-sm font-bold"
-      },
-      description: {
-        text: "Experto en Transformación Digital con más de 20 años de experiencia, especializado en RPA, BPM, IoT, Chatbots, Ciberseguridad y Gobierno Digital. Instructor y conferencista internacional en buenas prácticas TI e implementación de estándares como ISO 27001 e ISO 27032.",
-        className: "text-white mt-3 text-xs leading-relaxed"
-      }
-    },
+
     
     
     
@@ -115,7 +93,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
     
     {
       img: {
-        src: "./ceoD.png",
+        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
         className: "w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
       },
       etiqueta: {
@@ -142,7 +120,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
 
        {
       img: {
-        src: "./ceoD.png",
+        src: "./RicardoAstato.png",
         className: "w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
       },
       etiqueta: {
@@ -184,14 +162,14 @@ className: "text-white mt-3 text-xs leading-relaxed"
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-3 rounded-lg border border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
             <span className="text-[#FF4D0B] text-sm font-semibold">Ponentes</span>
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6 bg-gradient-to-r from-white to-stone-300 bg-clip-text text-transparent">
-            Aprende de los mejores
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Expertos que <span className="text-[#FF4D0B]">transforman</span> el futuro
           </h2>
-          <p className="text-stone-300 text-lg max-w-2xl mx-auto leading-relaxed">
-            Líderes tecnológicos que están transformando el panorama digital en Latinoamérica
+          <p className="text-stone-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Conoce a los profesionales que están definiendo el futuro de la tecnología y comparten su experiencia en este evento exclusivo
           </p>
         </div>
 
@@ -204,7 +182,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
   {speakers.map((speaker, index) => (
     <div key={index} className="min-w-full px-4">
       <div
-        className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl overflow-hidden flex flex-col items-center text-center speaker-container hover:scale-105 border border-[#FF4D0B]/20 shadow-2xl max-w-md mx-auto"
+        className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl overflow-hidden flex flex-col items-center text-center speaker-container hover:scale-105 border-2 border-[#FF4D0B]/30 shadow-2xl max-w-md mx-auto selection-line selection-line-card"
       >
         {/* Imagen */}
         <div className="w-full h-80 overflow-hidden relative bg-black">
@@ -241,7 +219,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
             onClick={() =>
               setCurrentIndex((prev) => (prev === 0 ? speakers.length - 1 : prev - 1))
             }
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border-2 border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20 selection-line selection-line-icon"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -252,7 +230,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
             onClick={() =>
               setCurrentIndex((prev) => (prev === speakers.length - 1 ? 0 : prev + 1))
             }
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border-2 border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20 selection-line selection-line-icon"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -265,7 +243,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-3 h-3 rounded-full transition-all duration-300 selection-line selection-line-icon ${
                   index === currentIndex 
                     ? "bg-[#FF4D0B] scale-125 shadow-lg shadow-[#FF4D0B]/50" 
                     : "bg-stone-600 hover:bg-stone-500"
@@ -277,17 +255,7 @@ className: "text-white mt-3 text-xs leading-relaxed"
 
         {/* CTA final */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-[#FF4D0B]/10 to-[#FF4D0B]/5 backdrop-blur-xl rounded-2xl p-8 max-w-2xl mx-auto border border-[#FF4D0B]/20 shadow-2xl">
-            <h3 className="text-xl font-semibold text-white mb-4">
-              ¿Listo para aprender de los expertos?
-            </h3>
-            <p className="text-stone-300 mb-6 leading-relaxed">
-              Únete a nosotros y obtén insights exclusivos de líderes que están definiendo el futuro tecnológico
-            </p>
-            <button className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#FF4D0B]/25">
-              Reservar mi lugar
-            </button>
-          </div>
+        
         </div>
       </div>
     </section>

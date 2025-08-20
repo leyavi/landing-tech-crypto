@@ -1,0 +1,131 @@
+/* ========================================
+   KEYFRAMES - TODAS LAS ANIMACIONES
+   ======================================== */
+
+/* ========================================
+   ANIMACIÓN DE ENTRADA PARA LÍNEAS NARANJAS
+   ======================================== */
+@keyframes lineEnter {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE PULSO PARA LÍNEAS NARANJAS
+   ======================================== */
+@keyframes linePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 11, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 77, 11, 0);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE BORDE PULSANTE PARA BOTÓN DE REGISTRO
+   ======================================== */
+@keyframes borderPulse {
+  0% {
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE ROTACIÓN PARA SPINNER
+   ======================================== */
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE FADE IN PARA ELEMENTOS
+   ======================================== */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE SLIDE IN DESDE ARRIBA
+   ======================================== */
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE SCALE IN PARA CARDS
+   ======================================== */
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE BOUNCE SUAVE
+   ======================================== */
+@keyframes softBounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 43% {
+    transform: translateY(-8px);
+  }
+  70% {
+    transform: translateY(-4px);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+}
+
+/* ========================================
+   ANIMACIÓN DE GLOW PULSANTE
+   ======================================== */
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 77, 11, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 77, 11, 0.8), 0 0 30px rgba(255, 77, 11, 0.6);
+  }
+}

@@ -358,7 +358,7 @@ export function RegistrationSection() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="bg-black rounded-2xl overflow-hidden relative border border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500">
+          <div className="bg-black rounded-2xl overflow-hidden relative border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500">
             {/* Orange glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#FF4D0B]/5 to-transparent opacity-50"></div>
             

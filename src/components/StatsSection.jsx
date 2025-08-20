@@ -89,23 +89,23 @@ export function StatsSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FF4D0B] mb-4 sm:mb-6 px-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#FF4D0B] mb-6 px-4">
             ¿Listo para transformar tu futuro digital?
           </h2>
-          <p className="text-white text-base sm:text-lg max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-white text-lg max-w-4xl mx-auto leading-relaxed px-4">
             Únete a empresas, profesionales CIP, institutos, universidades y emprendedores independientes en este evento que marcará un antes y después en tu carrera profesional.
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto px-4 mb-16 sm:mb-20">
+        <div className="grid grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto px-4 mb-16 sm:mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105 text-center"
+              className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl border-2 border-[#FF4D0B]/20 rounded-2xl p-8 text-center hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105 selection-line selection-line-card"
             >
               <div className="flex justify-center mb-4 sm:mb-6">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FF4D0B]/10 rounded-xl flex items-center justify-center group-hover:bg-[#FF4D0B]/20 transition-all duration-300">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FF4D0B]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#FF4D0B]/20 transition-all duration-300">
                   {stat.icon}
                 </div>
               </div>
@@ -121,10 +121,10 @@ export function StatsSection() {
 
         {/* Audience Section */}
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 rounded-lg border border-[#FF4D0B] mb-6 sm:mb-8 bg-black">
-            <span className="text-white text-sm sm:text-base font-semibold">Quiénes pueden inscribirse</span>
+          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 bg-black">
+            <span className="text-white text-sm font-semibold">Quiénes pueden inscribirse</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 px-4">
+          <h3 className="text-4xl lg:text-5xl font-bold text-white mb-6 px-4">
             Dirigido a <span className="text-[#FF4D0B]">profesionales</span> como tú
           </h3>
         </div>
@@ -145,10 +145,10 @@ export function StatsSection() {
                     {pair.map((audience, index) => (
                       <div
                         key={index}
-                        className="group bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#FF4D0B]/20 transition-all duration-500 hover:scale-105 text-center"
+                        className="group bg-white rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#FF4D0B]/20 transition-all duration-500 hover:scale-105 border-2 border-[#FF4D0B]/20 hover:border-[#FF4D0B]/40"
                       >
                         <div className="flex justify-center mb-4 sm:mb-6">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FF4D0B]/10 rounded-xl flex items-center justify-center group-hover:bg-[#FF4D0B]/20 transition-all duration-300">
+                          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FF4D0B]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#FF4D0B]/20 transition-all duration-300">
                             {audience.icon}
                           </div>
                         </div>

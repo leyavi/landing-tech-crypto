@@ -1,10 +1,10 @@
-import { Mail, Phone, MapPin, ExternalLink, Heart } from "lucide-react";
+import { Mail, Phone, MapPin, ExternalLink, Heart, Linkedin, Instagram, Twitter, Youtube } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export function FooterSection() {
   return (
-    <footer id="footer" className="bg-black border-t border-[#FF4D0B]/20">
+    <footer id="footer" className="bg-black border-t-2 border-[#FF4D0B]/30">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Company Info */}
@@ -35,14 +35,31 @@ export function FooterSection() {
             </div>
 
             <div className="flex gap-3 mt-6">
-              {['LinkedIn', 'Twitter', 'YouTube', 'Instagram'].map((social) => (
-                <button 
-                  key={social} 
-                  className="w-10 h-10 bg-white border border-stone-600 rounded-md flex items-center justify-center hover:bg-stone-700 hover:border-[#FF4D0B] transition-colors group"
-                >
-                  <ExternalLink className="w-4 h-4 text-stone-400 group-hover:text-[#FF4D0B]" />
-                </button>
-              ))}
+              <a 
+                href="https://www.linkedin.com/in/businessintelligencelatam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-[#0077B5] border-2 border-[#0077B5] rounded-md flex items-center justify-center hover:bg-[#0077B5]/90 hover:border-[#0077B5]/80 transition-all duration-300 group shadow-lg hover:shadow-xl"
+              >
+                <Linkedin className="w-4 h-4 text-white group-hover:text-white" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/dignita.tech/?originalSubdomain=pe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-[#0077B5] border-2 border-[#0077B5] rounded-md flex items-center justify-center hover:bg-[#0077B5]/90 hover:border-[#0077B5]/80 transition-all duration-300 group shadow-lg hover:shadow-xl"
+              >
+                <Linkedin className="w-4 h-4 text-white group-hover:text-white" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/leonidasyauri/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-[#0077B5] border-2 border-[#0077B5] rounded-md flex items-center justify-center hover:bg-[#0077B5]/90 hover:border-[#0077B5]/80 transition-all duration-300 group shadow-lg hover:shadow-xl"
+              >
+                <Linkedin className="w-4 h-4 text-white group-hover:text-white" />
+              </a>
+
             </div>
           </div>
 
@@ -63,8 +80,8 @@ export function FooterSection() {
               ))}
             </nav>
 
-            <div className="mt-8 bg-gradient-to-r from-[#FF4D0B]/10 to-[#FF4D0B]/5 rounded-lg p-4 border border-[#FF4D0B]/20">
-              <h5 className="text-white font-medium mb-2">Tech & Crypto Day 2025</h5>
+            <div className="mt-8 bg-gradient-to-r from-[#FF4D0B]/10 to-[#FF4D0B]/5 rounded-lg p-4 border-2 border-[#FF4D0B]/30">
+              <h5 className="text-white font-medium mb-2">Tech & Block 2025</h5>
               <div className="text-stone-400 text-sm space-y-1">
                 <p>29 agosto 2025</p>
                 <p>7:00 PM - 9:45 PM</p>

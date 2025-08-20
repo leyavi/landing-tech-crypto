@@ -28,14 +28,14 @@ export function OrganizersSection() {
     <section className="py-20 bg-stone-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-md border border-[#FF4D0B] mb-6">
-            <span className="text-[#FF4D0B] text-sm font-semibold">Organizadores y Aliados</span>
+          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 backdrop-blur-sm bg-black/20">
+            <span className="text-[#FF4D0B] text-sm font-semibold">Organizadores</span>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Respaldado por líderes del sector
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Quienes <span className="text-[#FF4D0B]">organizan</span> el evento
           </h2>
-          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
-            Instituciones y organizaciones que confían en nuestra visión de transformación digital
+          <p className="text-stone-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Instituciones y empresas líderes que se unen para crear una experiencia educativa excepcional
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export function OrganizersSection() {
           </h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {organizers.map((org, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-8 border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105">
                 <div className="aspect-video bg-gray-50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                   <ImageWithFallback
                     src={org.logo}
@@ -54,7 +54,7 @@ export function OrganizersSection() {
                     className="w-full h-full object-contain p-4"
                   />
                 </div>
-                <h4 className="text-lg font-semibold text-stone-900 text-center mb-2">
+                <h4 className="text-lg font-semibold text-white text-center mb-2">
                   {org.name}
                 </h4>
                 <div className="text-center">
@@ -91,7 +91,7 @@ export function OrganizersSection() {
         </div>
 
         {/* CTA para alianzas */}
-        <div className="bg-gradient-to-r from-[#FF4D0B]/10 to-[#FF4D0B]/5 rounded-xl p-8 max-w-4xl mx-auto border border-[#FF4D0B]/20">
+        <div className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl p-8 max-w-4xl mx-auto border-2 border-[#FF4D0B]/20 shadow-2xl hover:shadow-[#FF4D0B]/10 transition-all duration-500 hover:scale-105">
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-white mb-4">
               ¿Quieres ser parte de nuestra red de aliados?
