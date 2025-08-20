@@ -119,83 +119,16 @@ export function StatsSection() {
           ))}
         </div>
 
-        {/* Audience Section */}
-        <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-block px-6 py-3 rounded-lg border-2 border-[#FF4D0B] mb-6 bg-black">
-            <span className="text-white text-sm font-semibold">Quiénes pueden inscribirse</span>
-          </div>
-          <h3 className="text-4xl lg:text-5xl font-bold text-white mb-6 px-4">
-            Dirigido a <span className="text-[#FF4D0B]">profesionales</span> como tú
-          </h3>
-        </div>
+       
 
         {/* Audience Carousel 2x2 */}
-        <div className="relative max-w-4xl mx-auto px-4">
-          <div className="overflow-hidden rounded-2xl">
-            <div 
-              className="flex transition-transform duration-700 ease-out"
-              style={{ transform: `translateX(-${currentAudienceIndex * 100}%)` }}
-            >
-              {audiencePairs.map((pair, pairIndex) => (
-                <div
-                  key={pairIndex}
-                  className="w-full flex-shrink-0 px-4"
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                    {pair.map((audience, index) => (
-                      <div
-                        key={index}
-                        className="group bg-white rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#FF4D0B]/20 transition-all duration-500 hover:scale-105 border-2 border-[#FF4D0B]/20 hover:border-[#FF4D0B]/40"
-                      >
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FF4D0B]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#FF4D0B]/20 transition-all duration-300">
-                            {audience.icon}
-                          </div>
-                        </div>
-                        <h4 className="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3 group-hover:text-[#FF4D0B] transition-colors duration-300">
-                          {audience.title}
-                        </h4>
-                        <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                          {audience.description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        
+         
 
-          {/* Navigation Buttons */}
-          <button
-            onClick={prevAudience}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={nextAudience}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 backdrop-blur-sm text-white p-2 rounded-full border border-[#FF4D0B]/30 hover:bg-[#FF4D0B]/20 transition-all duration-300 z-20"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-
-          {/* Indicators */}
-          <div className="flex justify-center mt-6 space-x-2">
-            {audiencePairs.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentAudienceIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentAudienceIndex
-                    ? 'bg-[#FF4D0B] scale-125'
-                    : 'bg-white/30 hover:bg-white/50'
-                }`}
-              />
-            ))}
-          </div>
+         
+        
         </div>
-      </div>
+      
     </section>
   );
 }
