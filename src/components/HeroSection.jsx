@@ -131,14 +131,14 @@ export function HeroSection() {
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Transformación digital, sistematización, automatización & IA + blockchain & cripto
+           Un encuentro de alto nivel para quienes lideran la transformación digital. Aprende, conecta y proyecta el futuro de tu negocio con IA, RPA, Blockchain y DeFi.
           </p>
 
           {/* Botón de Registro Obligatorio */}
           <div className="text-center mb-8">
             <Button
               size="lg"
-              className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white shadow-lg px-10 py-6 text-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm registration-button-pulse "
+              className="bg-[#FF4D0B] hover:bg-[#FF4D0B]/90 text-white shadow-lg px-10 py-6 text-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm registration-button-pulse rounded-2xl"
               onClick={() => {
                 const registrationSection = document.getElementById('registration');
                 if (registrationSection) {
