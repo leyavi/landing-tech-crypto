@@ -35,10 +35,7 @@ export function ContentSection() {
   ];
 
   const intensiveContent = [
-    "Framework práctico",
-    "Casos de éxito",
-    "Networking dirigido",
-    "Material descargable"
+  
   ];
 
   return (
@@ -63,21 +60,18 @@ export function ContentSection() {
           </p>
         </div>
 
-        {/* Intensive Content Card */}
+        {/* 3 HORAS Text - Clean 3D without any shadows */}
         <div className="flex justify-center mb-16 px-4">
-          <div className="bg-white rounded-2xl p-8 border-2 border-[#FF4D0B] shadow-2xl w-full max-w-md mx-auto">
-            <div className="text-center mb-6">
-              <h3 className="text-4xl font-bold bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 text-transparent mb-2">3 HORAS</h3>
-              <p className="text-black text-lg">de contenido intensivo</p>
-            </div>
-            <div className="space-y-4">
-              {intensiveContent.map((item, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-[#FF4D0B] flex-shrink-0" />
-                  <span className="text-black font-medium text-base">{item}</span>
-                </div>
-              ))}
-            </div>
+          <div className="relative group">
+            {/* Main 3D text with gradient and glow effect */}
+            <h3 className="relative text-6xl lg:text-8xl font-black bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 text-transparent text-center leading-none tracking-tight z-10 transition-all duration-300 hover-glow cursor-pointer">
+              3 HORAS
+            </h3>
+            
+            {/* Top highlight for 3D effect */}
+            <h3 className="absolute inset-0 text-6xl lg:text-8xl font-black bg-clip-text bg-gradient-to-r from-white/60 via-white/30 to-transparent text-transparent text-center leading-none tracking-tight -z-5 translate-x-[-1px] translate-y-[-1px] transition-all duration-300 hover-glow">
+              3 HORAS
+            </h3>
           </div>
         </div>
 

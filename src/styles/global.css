@@ -119,3 +119,33 @@
     @apply w-full px-4 py-3 rounded-2xl border-2 border-[#FF4D0B]/30 bg-black/50 text-white placeholder-stone-400 focus:border-[#FF4D0B]/60 focus:outline-none transition-all duration-300;
   }
 }
+
+/* ========================================
+   ANIMACIONES PERSONALIZADAS PARA TEXTO 3D
+   ======================================== */
+@layer utilities {
+  /* Animación de sombra flotante para texto 3D */
+  .animate-shadow-float {
+    animation: shadowFloat 4s ease-in-out infinite;
+  }
+  
+  .animate-shadow-float2 {
+    animation: shadowFloat2 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .animate-shadow-float3 {
+    animation: shadowFloat3 4s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  /* Animación de glow para texto 3 HORAS */
+  .animate-text-glow {
+    animation: textGlow 2s ease-in-out infinite;
+  }
+  
+  /* Hover effect para glow */
+  .hover-glow:hover {
+    animation: textGlow 1s ease-in-out infinite;
+  }
+}

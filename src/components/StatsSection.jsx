@@ -13,16 +13,8 @@ export function StatsSection() {
       number: "4",
       label: "Speakers Expertos"
     },
-    {
-      icon: <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-[#FF4D0B]" />,
-      number: "3h",
-      label: "De Contenido Premium"
-    },
-    {
-      icon: <Gift className="w-8 h-8 sm:w-10 sm:h-10 text-[#FF4D0B]" />,
-      number: "100%",
-      label: "Gratuito"
-    }
+  
+   
   ];
 
   const audiences = [

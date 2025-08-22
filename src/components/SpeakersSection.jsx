@@ -185,12 +185,17 @@ className: "text-white mt-3 text-xs leading-relaxed"
         className="bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-xl rounded-2xl overflow-hidden flex flex-col items-center text-center speaker-container hover:scale-105 border-2 border-[#FF4D0B]/30 shadow-2xl max-w-md mx-auto selection-line selection-line-card"
       >
         {/* Imagen */}
-        <div className="w-full h-80 overflow-hidden relative bg-black">
+        <div className="w-full h-96 overflow-hidden relative bg-black">
           <ImageWithFallback
             src={speaker.img.src}
             alt={speaker.name.text}
-            className="w-full h-full object-contain object-center"
-            style={{ filter: 'brightness(1.1) contrast(1.05)' }}
+            className="w-full h-full object-cover object-center"
+            style={{ 
+              filter: speaker.name.text === "Ricardo Asto" 
+                ? 'brightness(1.2) contrast(1.1) saturate(1.1)' 
+                : 'brightness(1.1) contrast(1.05)',
+              objectPosition: speaker.name.text === "Ricardo Asto" ? "center 20%" : "center"
+            }}
           />
         </div>
 
